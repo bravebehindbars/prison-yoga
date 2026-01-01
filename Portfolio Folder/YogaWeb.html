@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Roberta's Yoga Website</title>
+
+<link rel="stylesheet" href="styleyoga.css" />
+<script src="script.js"></script>
+
+</head>
+
+ <title>Navbar with Dropdown</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Navbar container */
+    .navbar {
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    /* Navbar links */
+    .navbar a,
+    .dropdown button {
+      float: left;
+      font-size: 16px;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      border: none;
+      background: none;
+      cursor: pointer;
+    }
+
+    .navbar a:hover,
+    .dropdown:hover button {
+      background-color: #575757;
+    }
+
+    /* Dropdown container */
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+
+    /* Dropdown content (hidden by default) */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      z-index: 1;
+    }
+
+    /* Links inside dropdown */
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    /* Show dropdown on hover */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <a href="#home">Home</a>
+    <div class="dropdown">
+      <button>News Articles</button>
+      <div class="dropdown-content">
+        <a href="https://www.mainepublic.org/maine/2014-06-11/staying-out-of-prison-belfast-inmates-turn-to-yoga">Maine Public</a>
+        <a href="https://www.newscentermaine.com/article/news/health/mental-health/trauma-informed-yoga-class-helping-female-inmates-at-cumberland-county-jail-abuse-domestic-violence/97-a5e0e6bd-5648-4b32-ba78-7a8b5bd29339#:~:text=PORTLAND%2C%20Maine%20%E2%80%94%20A%20group%20of,their%20sentences%20or%20awaiting%20trial.">News Center Maine</a>
+        <a href="https://www.prisonyoga.org/news/">Prison Yoga News Page</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button>Prison Yoga Project</button>
+      <div class="dropdown-content">
+        <a href="https://www.prisonyoga.org/programs/publications-materials/">Publications & Materials</a>
+		<a href="https://www.prisonyoga.org/programs/advocacy-consulting/">Advocacy & Consulting</a>
+         
+        
+      </div>
+    </div>
+
+	<div class="dropdown">
+      <button>Music</button>
+      <div class="dropdown-content">
+        <a href="https://www.epidemicsound.com/music/themes/workout-wellness/spa-meditation/?_us=adwords&_usx=11282646959_&utm_source=google&utm_medium=paidsearch&utm_campaign=11282646959&utm_term=&gad_source=1&gad_campaignid=11282646959&gbraid=0AAAAADk_3Kl4scwkc85KrWoz67g2jo8J-&gclid=EAIaIQobChMIxeLgqYXMjgMVdzcIBR0DLwtbEAAYASAAEgKrhvD_BwE">Meditation Music</a>
+        <a href="https://pixabay.com/music/search/yoga/">Pixabay</a>
+        
+      </div>
+    </div>
+<div class="dropdown">
+      <button>Portfolio</button>
+      <div class="dropdown-content">
+        <a href="file://fs01/MCC_Redirect$/roberta.belanger/Documents/Brave%20Behind%20Bars/Portfolio%20Folder/indexp.html">Visit Roberta's Portfolio</a>
+        
+        
+      </div>
+    </div>
+
+
+    
+  </div>
+
+
+<body>
+	
+	
+<div style="display: flex; align-items: center;">
+		<img src="./images/yoga1.jpg" style="width: 350px; height: auto; margin-right: 10px;">
+
+	<div style="display: flex; flex-direction: column;">
+	</div>
+
+<style>
+	* {
+		box-sizing: border-box;
+	}
+
+	body {
+		margin: 10px;
+		padding: 10px;
+	}
+
+	.right-container {
+		position: absolute;
+		top: 160px;
+		right: 10px; 
+		text-align: center;
+		padding-right: 0; /* no extra space */
+	}
+
+	.right-container img{
+		width: 400px; /* adjust size */
+		height: auto;
+		display: block;
+		margin: 0px; /*remove extra space */
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+		cursor: pointer;
+	}
+
+	.right-container img:hover {
+		transform: scale(1.05);
+		box-shadow: 0 4px 12px lightgrey;
+	}
+
+	.right-container a {
+		font-size: 18px;
+		text-decoration: none;
+		color: black;
+		margin-top: 10px;
+		margin-right: 10px;
+		transition: color 0.3s ease;
+
+	}
+
+	.right-container a:hover {
+		color: yellow; /* Changes link color on hover */
+	}
+
+</style>
+
+
+<div class="right-container">
+	<img src="./images/prisonyogaproject.jpg" alt="prisonyogaproject">
+	<a href="https://www.prisonyoga.org" target="_blank" rel="noopener">CLICK HERE to<br>Visit The Prison Yoga Project Website<br> for more information!</a>
+</div>
+
+
+<main>
+<button onclick="playAudio()">Play Background Music</button>
+
+	<audio id="yoga-audio" loop>
+	<source src="yoga-meditation-background-ambient-pad-amp-thunderstorm-361115.mp3" type="audio/mpeg">
+		Your browser does not support the audio element
+	</audio>
+
+	<script>
+		function playAudio() {
+			const audio = document.getElementById('yoga-audio');
+			audio.play();
+		}
+	</script>	
+
+ <title>Yoga Animation</title>
+</head>
+<body>
+  <button onclick="addYogaGif()">Click to View Yoga Animation</button>
+  <div id="yogaContainer"></div>
+
+  <script>
+    function addYogaGif() {
+      const img = document.createElement("img");
+      img.src = "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExOGEwYnJvcnNzbWVvYzA1dnRlMnlsMXJpb21kcWRxeTRoNWFxOTU2NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/6VsSJhslIFqbLDCytI/giphy.gif"; // Yoga GIF URL
+      img.alt = "Person doing yoga";
+      img.style.width = "300px"; // optional
+      document.getElementById("yogaContainer").appendChild(img);
+    }
+  </script>
+
+
+
+	<div class="myheader">
+		<h1>YOGA</h1>
+	
+	</div>
+
+	<div class="p2">
+		<h2>Healing Mind,Body & Soul </h2>
+	</div>
+	
+	
+		
+	
+
+	</div>	
+
+
+	
+	<div class="boxes">
+
+		<section class="p3">
+			<h1>Yoga can be an incredibly inspiring and transformative tool for prison reform by offering a powerful part towards healing, rehabilitation, and personal growth for incarcerated individuals.</h1>
+		</section>	
+
+		<section class="p4">
+			<h1>Some ways yoga contributes to prison reform:</h1>
+			<p>Addressing the Root Causes of Incarceration:<br>
+			<p>Trauma recovery: Many individuals in prison have experienced significant trauma in their lives, which can contribute to negative behaviors and incarceration.  Trauma-informed yoga provides a safe space for participants to address and heal from trauma.
+			<p>Empowerment and self regulation: Yoga helps individuals develop self-control, emotional stability, and the ability to regulate their impulses. This is crucial for managing difficult situations and making positive choices, both inside and outside of prison.
+			<p>Healing over punishment: Prison reform initiatives often emphasize a shift from punitive justice to a more healing-centered approach.  Yoga aligns with this vision by focusing on addressing the underlying issues that constribute to criminal behavior.</p>
+		</section>	
+	
+
+
+		<section class="p5">
+			<h1>Enhancing Mental and Emotional Well-being:<br></h1>
+			<p>Reduced stress and anxiety: Yoga is scientifically proven to reduce stress and anxiety, which are prevalent among incarcerated individuals.</p>
+			<p>Improved mood and psychological well-being:<br> Studies have demonstrated that yoga can significantly improve mood, decrease psychological distress, and enhance overall mental health in prison populations.</p>
+			<p>Increased self-awareness and self-compassion:<br> Through yoga and mindfulness practices, participants gain a deeper understanding of themselves, develop self-compassion, and learn to navigate challenging emotions with greater ease.</p>
+		</section>
+
+
+
+		<section class="p6">
+			<h1>Promoting Positive Behavior and Reducing Recidivism:<br></h1>
+			<p>Improved impulse control and decision-making:<br> Yoga helps individuals develop better impulse control and enhances their ability to make thoughtful and responsible decisions.
+
+			<p>Reduced aggression and antisocial behavior:<br> Research suggests that yoga can lead to a decrease in aggression and antisocial behavior among incarcerated individuals.<br></p>
+
+			<p>Increased pro-social skills:<br> Yoga fosters a sense of community, empathy, and compassion, which are essential for building positive relationships and contributing to society.<br></p>
+
+			<p>Potential for reducing recidivism:<br> Some studies suggest that yoga programs may contribute to lower recidivism rates among formerly incarcerated individuals.<br></p>
+			
+		</section>
+
+		
+		<section class="p7"> 
+			<h1>Supporting Reintegration into Society:<br></h1>
+			<p>Tools for coping with stress and challenges:<br> Yoga provides individuals with valuable tools and techniques for managing stress, anxiety, and the challenges of re-entry into society.<br></p>
+
+			<p>Enhanced resilience and self-efficacy:<br> Yoga empowers individuals to build resilience, develop a sense of agency, and believe in their ability to succeed in their lives outside of prison.<br></p>
+
+			<p>Breaking the cycle of negative behaviors:<br> By addressing trauma, improving self-regulation, and fostering positive social connections, yoga helps individuals break free from the cycles that may have led to their incarceration.<br></p>
+		</section>
+
+
+
+		<section class="p8">
+			<h1>In summary, yoga's role in prison reform is inspirational because it offers a holistic and compassionate approach to rehabilitation that focuses on healing, empowerment, and positive transformation, ultimately contributing to safer communities and a more just society.</h1>
+		</section>
+		
+	</div>		
+
+	<div class="video-row">
+		<iframe 
+			src="https://www.youtube.com/embed/rkvbu2n7ETA" title="Why This Woman Goes to Prison to Teach Yoga" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			
+		<iframe
+			src="https://www.youtube.com/embed/JZihovyf3Yg" title="How Yoga &amp; Meditation SAVED an Inmate&#39;s Life - Travis Eliot" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	
+		<iframe 
+			src="https://www.youtube.com/embed/_TIB6XLKjJM" title="How yoga classes held at Maine jail help support trauma and recovery" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	</div>	
+</div>
+
+		
+
+
+</main>
+
+<title>Date & Time Clock</title>
+  <style>
+    #clock {
+      font-size: 2em;
+      font-family: cursive;
+      margin: 20px;
+  }
+  </style>
+</head>
+<body>
+  <div id="clock"></div>
+
+   <script>
+    function updateClock() {
+      const now = new Date();
+
+      // Get date parts
+      const day = String(now.getDate()).padStart(2, '0');
+      const month = String(now.getMonth() + 1).padStart(2, '0'); // Months are 0-based
+      const year = now.getFullYear();
+      const	dateString = `${month}/${day}/${year}`;
+
+      // Get time parts
+      let hours = now.getHours();
+      const minutes = String(now.getMinutes()).padStart(2, '0');
+      const seconds = String(now.getSeconds()).padStart(2, '0');
+      const ampm = hours >= 12 ? 'PM' : 'AM';
+
+     // Convert to 12-hour format
+      hours = hours % 12;
+      hours = hours ? hours : 12; // '0' becomes '12'
+      hours = String(hours).padStart(2, '0');
+
+      const timeString = `${hours}:${minutes}:${seconds} ${ampm}`;
+
+      document.getElementById('clock').textContent = `${dateString} ${timeString}`;
+    }
+
+    setInterval(updateClock, 1000); // Update every second
+    updateClock(); // Initial call
+  </script>
+
+
+
+
+</body>
+</html>
+
+ 
+  		
+  		

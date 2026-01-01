@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Courgette">
+
+	<title>Roberta's Site</title>
+	
+	<link rel="stylesheet" href="stylep.css" />
+	
+<head>
+  <meta charset="UTF-8">
+  <title>Fade In and Out</title>
+  <style>
+    .fade-text {
+      font-size: 2em;
+      animation: fadeInOut 4s infinite;
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    @keyframes fadeInOut {
+      0%, 100% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+
+  </style>
+</head>
+<body>
+
+  <div class="fade-text">Hello, Everyone! Enjoy Reading about me and my interests!</div>
+
+</body>
+
+
+</head>
+<body class="background">
+
+
+<style>
+      body {
+        font-family: 'Courgette', serif;
+        font-size: 25px;
+      }
+ </style>
+	<body>
+
+<div class="carousel-heading-container">		
+  <div class="carousel">
+  	<div class="carousel-images">
+    	<img src="image/aboutme.jpg" alt="Slide 1" class="active">
+   	 	<img src="image/family.jpg" alt="Slide 2">
+			<img src="image/family2.jpg" alt="Slide 3">
+   	 	<img src="image/grammy.jpg" alt="Slide 4">
+   	 	<img src="image/walkingbenefits.jpg" alt="Slide 5">
+    	<img src="image/yogabenefits.jpg" alt="Slide 6">
+    	<img src="image/knivesedge.png" alt="Slide 7">
+    	<img src="image/katahdin.jpg" alt="Slide 8">
+    	<img src="image/katahdin2.jpg" alt="Slide 9">
+    	<img src="image/crochet.jpg" alt="Slide 10">
+    	<img src="image/tumbler.jpg" alt="Slide 11">
+    	<img src="image/blanket.jpg" alt="Slide 12">
+
+
+  </div>
+  <button class="prev">&#10094;</button>
+  <button class="next">&#10095;</button>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const images = document.querySelectorAll('.carousel-images img');
+      const prevBtn = document.querySelector('.carousel .prev');
+      const nextBtn = document.querySelector('.carousel .next');
+
+      let currentIndex = 0;
+
+      function showImage(index) {
+        images.forEach(img => img.classList.remove('active'));
+        images[index].classList.add('active');
+      }
+
+      prevBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        showImage(currentIndex);
+      });
+
+      nextBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % images.length;
+        showImage(currentIndex);
+      });
+    });
+  </script> 
+   	
+
+		<main>
+
+			<div class="roberta">
+				<div class="container">
+					<img src="image/girl.jpg?text=Main+Image" class="main-image" alt="Main image">
+					
+					<center>
+						<h1>Welcome to<br>
+						Roberta's Portfolio!</h1>
+					</center>
+				
+					<img class="gif3" src="animated-butterfly-image-0208.gif" alt="Animated Gif">
+				</div>	
+
+				<div class="boxes">
+
+					<section class="aboutme">
+						<h2>About me</h2>
+						<p>
+							I am 59 years young!<br>
+						I am currently residing at Southern Maine Womens ReEntry Center in Windham because of a bad choice I made. I am in the process of serving for that bad choice and choosing to change my life in a positive way!<br>
+						<p>I am originally from a small town in northern Aroostook County Maine. I have lived there pretty much my whole life.  I have been married for 38 years and have 4 sons and 12 amazing grandchildren.<br> My family is my world and I absolutely love being a Grammy :)!!<br> You can click on the link below to see more information about the county that I live in!</p>
+						I guess to explain a little about me is pretty much, I lost myself somewhere along the way of getting married and having kids.  I love them dearly but I always put myself on the back burner and all my attention went towards taking care of them and everyone else.  When looking at this question of "About Me" I struggled to write about me because I discovered I didn't know me? Since being incarcerated I am starting to learn more about me and my interests and goals. I have always put others needs ahead of mine and I am learning that I need to start thinking about me and my needs!<br> 
+						While here I have been involved in many programs like Book Club, Crocheting Class, Living Classroom, Volunteering where ever and whenever I can. I have also met some genuine good ladies that I play cards with and conversate with, some have become very special to me and I hope to stay in touch with them on the outside! I didn't plan on making friends while incarcerated but I feel lucky that I have met and befriended these additional special people in my life!
+						<br>My favorite program is my Yoga Class every Friday with instructor Jess. I look forward to yoga every week. Yoga helps ground me and is helping me heal mind, body and soul! I also enjoy walking outsite alot. I love the smell of the fresh air, flowers and just being outside. Walking clears my mind and allows me to reflect on the choices I have made in my life and eventually get me back and helps me think clearer.<br>
+						I also started working for CTI Cleaning Services Monday thru Friday. Working makes me feel useful and helping give back. Plus helps the days go by a little faster and gets me away from all the drama that goes on in here :).<br></p>
+					 	
+						<a href="https://visitmaine.com/places-to-go/aroostook-county/">Visit Aroostook County Maine</a>
+						
+					</section>
+
+					<section class="interests">
+						<center>
+						<h2>Interests</h2></center>
+						<ul>
+							<img class="gif2" src="animated-hiking-image-0006.gif" alt="Animated Gif">
+							<li>Hiking
+								<a href="https://www.alltrails.com" class="my-button">Go to All Trails.com</a></li>
+									<ul style="list-style-type:none;">
+										<li>I have hiked Mount Katahdin in Maine twice, once Hunt Trail with my son and aunt and second Knives Edge with my aunt. What a great experience and amazing views! I have also hiked alot of other trails in Northern Maine. So peaceful being out in nature and breathing the fresh air!</li>
+									</ul>
+							<li>Walking/Running</li>
+								<ul style="list-style-type:none;">
+									<li>For the last 5 years I have worked hard to get healthy and in shape and with the help of walking/running this has been possible! I feel so much healthier in mind and body!</li>
+								</ul>
+							<li>Cooking
+								<a href="https://www.allrecipes.com" class="my-button">Go to All Recipes.com</a></li>
+								<ul style="list-style-type:none;">
+									<li>I have always loved cooking and trying new recipes. My family put together a family cookbook a few years back and all family members submitted some of our favorite recipes. Very special cookbook to me!</li>
+								</ul>
+							<li>Cake Decorating
+								<a href="https://www.sugarspunrun.com/how-to-decorate-cake-beginners/" class="my-button">How to Decorate a Cake for Beginners</a></li>
+								<img class="gif" src="animated-cake-image-0057.gif" alt="Animated Gif">
+								<ul style="list-style-type:none;">
+									<li>I baked and decorated custom cakes for about 20+ years for my small business. Weddings, birthdays, retirements etc basically cakes for any occassion. Some customers challenged me with some unusual designs but I loved the challenge and always delivered an amazing cake! I also added edible paper generated on a printer that had edible ink. With this option I was able to create custom designs on the computer and print on edible paper then apply to a cake! I only decorate cakes now for my family and grandkids birthdays now but I may get back into doing cakes down the road?</li>
+								</ul>
+							<li>Graphic Design</li>
+									<ul style="list-style-type:none;">
+										<li>I create custom designs per customers requests for items that they wish to have applied to like tumblers, shirts, blankets etc.</li>
+									</ul>
+							<li>Crocheting</li>
+							   <ul style="list-style-type:none;">
+								   <li>I have always enjoyed crocheting blankets and have made myself one while here but since being incarcerated I have met so many ladies that are very talented and make stuffed animals and I would love to learn the process of making them someday.</li>
+								 </ul> 
+							<li>Reading</li>
+								<ul style="list-style-type:none;">
+									<li>I never had time to read basically because I was always taking care of everyone else and just never did. Since here I have read alot of books and I am enjoying getting back to reading plus it is calming and exciting at the same time depending on the book. I enjoy mystery and thriller books.</li>
+								</ul>
+							<li>Yoga
+								<a href="../index.html"class="my-button">Visit My Website "Heal Mind Body & Soul with Yoga!"</a></li>
+								<ul style="list-style-type:none;">
+									<li>Yoga is my favorite by far as I have written in the about me section! Very calming and helps heal mind body and soul!</li>
+								</ul>
+
+						</ul>
+					</section>	
+
+					<section class="goals">
+						<center><h2>Goals</h2></center>
+						<ul>
+							<li>One current goal is to get thru the next couple of years of recovery and healing to able to go home to my family a better version of myself.</li>
+							<li>Another goal is to start an online business for my crafting such as: Custom clothing, blankets, tumblers pretty much any products that can be designed and printed using sublimation printing and vinyl materials for resale. Also a laser engraver for making additional products such as cribbage boards, ceramic tiles, many wood products, metal engraving, leather patches for hats etc.</li>
+						</ul>
+					</section>
+
+					<section class="skills">
+						<center><h2>Skills</h2></center>
+						<ul>	
+							<li>Computer Graphic Designing</li>
+							<li>Cake Decorating</li>
+							<li>Crocheting</li>
+							<li>Computer knowledge of various program or software</li>
+							<li>Crafting with laser engraving machine, vinyl cutting machine, sublimatioin printer to tshirt and other items for design and resale</li>
+						</ul>
+					</section>
+
+					<section class="whyiam">
+						<h2>Why I am participating in this class?</h2>
+						<p>I am participating in this class because I would like to design my own website for my online business to which I am in the process of creating. This helps make me one step closer to making my dream come true being able to start an online business.</p>
+					</section>
+
+					<section class="whathope">
+						<h2>What I hope to learn from this class.</h2>
+						<p>This question goes pretty much with the one about why I am taking this class.  What I hope to learn is to learn how to properly code and design a website page for my own business that will be easier for the consumer to browse and find items easy and complete online orders for me to fullfill. I realize online businesses start off slow but with time and more experience and with the help of this class I will be able to be successful starting a new business.</p>
+					</section>
+
+
+				</div>
+
+
+	
+
+</main>
+</body>
+</html>
